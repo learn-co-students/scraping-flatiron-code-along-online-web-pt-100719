@@ -26,7 +26,7 @@ class Scraper
     self.make_courses
     Course.all.each do |course|
       if course.title && course.title != ""
-        puts "Title: #{course.title}"
+        puts "Title: #{course.title}\n"
         puts "  Schedule: #{course.schedule}"
         puts "  Description: #{course.description}"
       end
